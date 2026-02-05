@@ -1,1 +1,1 @@
-# lab--de--introducci-n-a-la-programaci-n-
+# lab--de--introducci-n-a-la-programacion-
