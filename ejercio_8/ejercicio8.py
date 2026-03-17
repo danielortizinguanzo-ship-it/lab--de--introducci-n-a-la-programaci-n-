@@ -33,9 +33,12 @@ def triangulo():
         print("*" * i)
 
 def tabla_multiplicar():
-    for i in range(1,11):
-        resultado = 1 * i 
-        print(f"1 x {i} = {resultado}")
+    for numero in range(1, 11):
+            print(f"Tabla de multiplicar del {numero}:")
+            for i in range(1, 11):
+                resultado = numero * i
+                print(f"{numero} x {i} = {resultado}")
+            print()
 
 def trinagulo_de_numeros():
     numero = int(input("ingresa un numero entero positivo:"))
