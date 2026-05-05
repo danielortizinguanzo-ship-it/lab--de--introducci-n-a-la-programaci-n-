@@ -1,0 +1,65 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    background:#f5f5f5;
+}
+
+header{
+    background:#1976d2;
+    color:white;
+    display:flex;
+    gap:10px;
+    padding:10px;
+    align-items:center;
+}
+
+header input{
+    flex:1;
+    padding:8px;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    gap:10px;
+    padding:10px;
+}
+
+.card{
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.card img{
+    width:100%;
+}
+
+/* MODAL */
+.modal{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    top:0;
+    left:0;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.modal video{
+    width:90%;
+    border-radius:10px;
+}
