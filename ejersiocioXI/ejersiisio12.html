@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POS Walmart Style</title>
+
+<link rel="stylesheet" href="/static/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h2>🛒 POS</h2>
+    <input type="text" placeholder="Buscar producto">
+    <button onclick="openScanner()">📷</button>
+</header>
+
+<section id="products" class="products"></section>
+
+<!-- MODAL ESCANER -->
+<div id="scannerModal" class="modal">
+    <video id="video" autoplay></video>
+    <button onclick="closeScanner()">Cerrar</button>
+</div>
+
+<script src="https://unpkg.com/@zxing/library@latest"></script>
+<script src="/static/script.js"></script>
+
+</body>
+</html>
